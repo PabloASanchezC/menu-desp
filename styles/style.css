@@ -123,3 +123,63 @@ main {
     border-color: #7e55df;
     box-shadow: 0px 2px 5px #7e55df;
 }
+
+.film {
+    width: 100%;
+    overflow: scroll;
+    padding-left: 10px;
+    position: relative;
+    /* border: 2px solid red; */
+}
+
+.film__container {
+    white-space: nowrap;
+    margin: 70px 0;
+    padding-bottom: 10px;
+}
+
+.film--item {
+    width: 200px;
+    height: 250px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms;
+    transform-origin: center left;
+    position: relative;
+}
+
+.film--item:hover ~ .film--item {
+    transform: translate3d(100px, 0, 0);
+}
+
+.film__container:hover .film--item {
+    opacity: 0.3;
+} 
+
+.film__container:hover .film--item:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.film--item__image {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.film--item__details {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    font-size: 1rem;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
