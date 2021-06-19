@@ -1,3 +1,9 @@
+/* colores:
+verde: #CEE5D0
+arena: #F3F0D7
+tierra: #D8B384
+café: #5E454B */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,13 +15,13 @@
     }
     /* para medida rem*/
 body{
-    background-color: #ab88ff;
+    background-color: #D8B384;
 }
 .header {
     display: flex;
     width: 100%;
     height: 80px;
-    background-color: #ab88ff;
+    background-color: #D8B384;
     /* border: solid red; */
     justify-content: space-between;
 }
@@ -101,32 +107,33 @@ main {
     width: 40%;
     height: 30px;
     min-width: 250px;
-    background-color: #ceb8ff;
+    background-color: #F3F0D7;
     border: solid 2px white;
     border-radius: 15px;
     text-align: center;
     font-size: 1.4rem;
     font-weight: bold;
     letter-spacing: .12rem;
-    color: #7e55df;
+    color: #5E454B;
 }
 
 ::placeholder {
     text-align: start;
     padding-left: 10px;
-    color: #7e55df;
+    color: #5E454B;
     opacity: .5;
 }
 
 .main__searchbar--bar:focus-visible {
     outline: unset;
-    border-color: #7e55df;
-    box-shadow: 0px 2px 5px #7e55df;
+    border-color: #5E454B;
+    box-shadow: 0px 2px 5px #5E454B;
 }
 
 .film {
     width: 100%;
     overflow: scroll;
+    overflow-y: hidden;
     padding-left: 10px;
     position: relative;
     /* border: 2px solid red; */
@@ -141,7 +148,7 @@ main {
 .film--item {
     width: 200px;
     height: 250px;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     border-radius: 10px;
     overflow: hidden;
     margin-right: 10px;
@@ -172,14 +179,54 @@ main {
 }
 
 .film--item__details {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
     font-size: 1rem;
     opacity: 0;
     transition: 450ms opacity;
     padding: 10px;
-    position: absolute;
+  position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 0;  
 }
+
+.film--item__details:hover {
+    opacity: 1;
+}
+
+.film--item__details img {
+    margin: 5px;
+}
+
+.film--item__details p {
+    font-family: 'lato', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: whitesmoke;
+}
+footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    font-family: 'lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.3;
+    padding-left: 10px;
+    position: fixed;
+    bottom: 0;
+}
+footer section {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: whitesmoke;
+    color: whitesmoke;
