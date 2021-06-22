@@ -213,20 +213,24 @@ footer {
     height: 50px;
     display: flex;
     font-family: 'lato', sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 700;
-    letter-spacing: 0.3;
+    letter-spacing: 0.3rem;
     padding-left: 10px;
-    position: fixed;
+    position:static;
     bottom: 0;
 }
 footer section {
     display: flex;
-    width: 30%;
+    width: 40%;
     justify-content: space-between;
     align-items: center;
 }
 
 footer a {
-    text-decoration: whitesmoke;
+    /* width: 250px; */
+    text-decoration: none;
     color: whitesmoke;
+    margin-right: 8px;
+
+}
