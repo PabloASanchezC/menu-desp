@@ -222,7 +222,7 @@ footer {
 }
 footer section {
     display: flex;
-    width: 40%;
+    width: 50%;
     justify-content: space-between;
     align-items: center;
 }
