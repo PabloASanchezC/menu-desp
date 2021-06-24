@@ -102,7 +102,7 @@ main {
     margin: 30px 0;
     min-height: calc(100vh - 150px);
     }
-.login__container{
+.register__container{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -116,12 +116,12 @@ main {
     box-shadow: 0px 2px 10px 3px rgba(0,0,0,0.3);
 }
 
-.login__container h2 {
+.register__container h2 {
     font-weight: bold;
     font-size: 1.6rem;
 }
 
-.login__container--form {
+.register__container--form {
     width: 300px;
     height: 210px;
     display: flex;
@@ -130,7 +130,7 @@ main {
     justify-content: space-around;
 }
 
-.login__container--form .input{
+.register__container--form .input{
     width: 240px;
     height: 40px;
     color: whitesmoke;
@@ -140,7 +140,7 @@ main {
     border-bottom: 2.5px solid whitesmoke;
 }
 
-.login__container--form .input::placeholder{
+.register__container--form .input::placeholder{
     color: whitesmoke;
     font-weight: bold;
     font-size: 1.4rem;
@@ -149,11 +149,11 @@ main {
     /* text-align: center; */
 }
 
-.login__container--form .input:focus-visible{
+.register__container--form .input:focus-visible{
     outline: unset;
 }
 
-.login__container--form button {
+.register__container--form button {
     width: 240px;
     height: 25px;
     margin-top: 10px;
@@ -165,60 +165,18 @@ main {
     letter-spacing: 0.1rem;
 }
 
-.login__container--form button:hover{
+.register__container--form button:hover{
     font-weight: bold;
     box-shadow: 0px 2px 6px 0px rgb(0 0 0 / 10%);
 }
 
-.login__container--remember {
-    display: flex;
-    width: 240px;
-    color: whitesmoke;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-top: 15px;
-}
-
-.login__container--remember label {
-    display: flex;
-    align-items: flex-end;
-    width: 100px;
-    justify-content: space-evenly;
-}
-
-.login__container--remember a {
-    text-decoration: none;
-    font-family: 'lato', sans-serif;
-    /* font-size: 1.2rem; */
-    font-weight: bold;
-    color: whitesmoke;
-}
-
-.login__container--remember a:hover {
-    color: var(--green);
-}
-
-.login__container--sMedia > div {
-    display: flex;
-    align-items: center;
-    font-size: 1.2rem;
-}
-
-.login__container--sMedia > div img {
-    width: 20px;
-}
-
-.login__container--sMedia > div p {
-    margin-left: 5px;
-}
-
-.login__container--registro {
+.register__container--login {
     width: 250px;
     margin-top: 15px;
     text-align: center;
 }
 
-.login__container--registro a {
+.register__container--login a {
     margin-left: 5px;
     text-decoration: none;
     font-family: 'lato', sans-serif;
@@ -226,7 +184,7 @@ main {
     color: whitesmoke;
 }
 
-.login__container--registro a:hover {
+.register__container--login a:hover {
     color: var(--green);
 }
 
